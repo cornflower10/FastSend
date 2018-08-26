@@ -34,7 +34,7 @@
             android:id="@+id/iv_device"
             android:layout_width="@dimen/dp_96"
             android:layout_height="@dimen/dp_96"
-            android:src="@mipmap/ic_launcher"
+            android:src="@mipmap/ic_launcher_round"
             app:civ_border_width="2dp"
             app:civ_border_color="#FFFFFFFF"
             android:layout_centerInParent="true"/>

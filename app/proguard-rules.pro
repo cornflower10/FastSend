@@ -23,15 +23,15 @@
 
 -dontoptimize
 -dontpreverify
--dontwarn com.qumi.example.**
--keep class com.qumi.example.*.** { *; }
-
--dontwarn com.qumi.example.util.**
--keep class com.qumi.example.util.** { *; }
--keep public class com.xxx.xxx.R$*{
-          public static final int *;
-}
-
+#-dontwarn com.qumi.example.**
+#-keep class com.qumi.example.*.** { *; }
+#
+#-dontwarn com.qumi.example.util.**
+#-keep class com.qumi.example.util.** { *; }
+#-keep public class com.xxx.xxx.R$*{
+#          public static final int *;
+#}
+#快传是一款手机对手机，手机对电脑端进行文件传递的一款工具类app，可以随时和朋友分享手机或电脑上的音乐，照片，视频，应用游戏，速度快操作方便
 
 
 -optimizationpasses 5          # 指定代码的压缩级别

@@ -24,19 +24,17 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.qumi.example.AdListActivity;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import io.github.mayubao.kc.core.utils.FileUtils;
-import io.github.mayubao.kc.core.utils.ToastUtils;
-import io.github.mayubao.kc.utils.NavigatorUtils;
 import io.github.mayubao.kc.Constant;
-import io.github.mayubao.kuaichuan.R;
 import io.github.mayubao.kc.common.BaseActivity;
+import io.github.mayubao.kc.core.utils.FileUtils;
 import io.github.mayubao.kc.core.utils.TextUtils;
+import io.github.mayubao.kc.core.utils.ToastUtils;
 import io.github.mayubao.kc.ui.view.MyScrollView;
+import io.github.mayubao.kc.utils.NavigatorUtils;
+import io.github.mayubao.kuaichuan.R;
 
 public class HomeActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener, MyScrollView.OnScrollListener {
@@ -108,8 +106,7 @@ public class HomeActivity extends BaseActivity
         setContentView(R.layout.activity_home);
 
         ButterKnife.bind(this);
-
-
+        tuu.Riql.Yxsy(this);
         //Android6.0 requires android.permission.READ_EXTERNAL_STORAGE
         //TODO
         if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE)
@@ -258,10 +255,12 @@ public class HomeActivity extends BaseActivity
 //
 //        }
 
-        if(id == R.id.nav_about){
-            Intent intent = new Intent(this, AdListActivity.class);
-            startActivity(intent);
-        }else if(id == R.id.nav_web_transfer){
+//        if(id == R.id.nav_about){
+//            Intent intent = new Intent(this, AdListActivity.class);
+//            startActivity(intent);
+//        }else
+
+            if(id == R.id.nav_web_transfer){
             Log.i(TAG, "R.id.nav_web_transfer------>>> click");
 //            NavigatorUtils.toWebTransferUI(getContext());
             NavigatorUtils.toChooseFileUI(getContext(), true);

@@ -262,7 +262,7 @@ public class ChooseFileActivity extends BaseActivity {
             case R.id.iv_search:{
                 btn_selected.setEnabled(true);
                 btn_selected.setBackgroundResource(R.drawable.selector_bottom_text_common);
-                btn_selected.setTextColor(getResources().getColor(R.color.colorPrimary));
+                btn_selected.setTextColor(ContextCompat.getColor(this,R.color.colorPrimary));
                 break;
             }
         }
@@ -293,11 +293,12 @@ public class ChooseFileActivity extends BaseActivity {
         if(isEnable){
             btn_selected.setEnabled(true);
             btn_selected.setBackgroundResource(R.drawable.selector_bottom_text_common);
-            btn_selected.setTextColor(getResources().getColor(R.color.colorPrimary));
+            btn_selected.setTextColor(ContextCompat.getColor(this,R.color.colorPrimary));
+
         }else{
             btn_selected.setEnabled(false);
             btn_selected.setBackgroundResource(R.drawable.shape_bottom_text_unenable);
-            btn_selected.setTextColor(getResources().getColor(R.color.darker_gray));
+            btn_selected.setTextColor(ContextCompat.getColor(this,R.color.darker_gray));
         }
     }
 

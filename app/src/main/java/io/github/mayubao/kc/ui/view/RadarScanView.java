@@ -8,6 +8,7 @@ import android.graphics.RectF;
 import android.graphics.SweepGradient;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -55,12 +56,12 @@ public class RadarScanView extends View {
      * 初始化
      */
     private void init(Context context){
-        mCircleColor = context.getResources().getColor(R.color.transparent_white);
-        mArcColor = context.getResources().getColor(R.color.transparent_white);
-        mLineColor = context.getResources().getColor(R.color.transparent_white);
+        mCircleColor = ContextCompat.getColor(context,R.color.transparent_white);
+        mArcColor =ContextCompat.getColor(context,R.color.transparent_white);
+        mLineColor =ContextCompat.getColor(context,R.color.transparent_white);
 
-        mArcStartColor = context.getResources().getColor(R.color.transparent_white);
-        mArcEndColor = context.getResources().getColor(android.R.color.transparent);
+        mArcStartColor =ContextCompat.getColor(context,R.color.transparent_white);
+        mArcEndColor =ContextCompat.getColor(context,R.color.transparent);
 
 
         mCirclePaint = new Paint(Paint.ANTI_ALIAS_FLAG);

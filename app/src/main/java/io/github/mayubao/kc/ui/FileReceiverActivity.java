@@ -232,8 +232,8 @@ public class FileReceiverActivity extends BaseActivity {
 
             if(total  == mTotalLen){
                 pb_total.setProgress(0);
-                tv_value_storage.setTextColor(getResources().getColor(R.color.color_yellow));
-                tv_value_time.setTextColor(getResources().getColor(R.color.color_yellow));
+                tv_value_storage.setTextColor(ContextCompat.getColor(this,R.color.color_yellow));
+                tv_value_time.setTextColor(ContextCompat.getColor(this,R.color.color_yellow));
             }
         }catch (Exception e){
             //convert storage array has some problem
