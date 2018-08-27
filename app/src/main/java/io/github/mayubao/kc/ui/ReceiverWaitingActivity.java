@@ -198,7 +198,7 @@ public class ReceiverWaitingActivity extends BaseActivity {
      */
     private void init(){
         radarLayout.setUseRing(true);
-        radarLayout.setColor(getResources().getColor(R.color.white));
+        radarLayout.setColor(ContextCompat.getColor(this,R.color.white));
         radarLayout.setCount(4);
         radarLayout.start();
 
