@@ -42,10 +42,6 @@ import io.github.mayubao.kc.ui.view.RadarScanView;
 import io.github.mayubao.kc.utils.ListUtils;
 
 
-/**
- * Created by mayubao on 2016/11/28.
- * Contact me 345269374@qq.com
- */
 public class ChooseReceiverActivity extends BaseActivity {
 
     private static final String TAG = ChooseReceiverActivity.class.getSimpleName();

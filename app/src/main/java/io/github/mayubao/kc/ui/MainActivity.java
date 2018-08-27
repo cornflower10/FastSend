@@ -17,10 +17,7 @@ import android.view.ViewGroup;
 import io.github.mayubao.kc.utils.NavigatorUtils;
 import io.github.mayubao.kuaichuan.R;
 
-/**
- * Created by mayubao on 2016/11/28.
- * Contact me 345269374@qq.com
- */
+
 public class MainActivity extends AppCompatActivity{
 
     RecyclerView rv;
