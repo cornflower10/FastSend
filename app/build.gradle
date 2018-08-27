@@ -2,8 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "25.0.3"
-
+    buildToolsVersion '25.0.3'
     defaultConfig {
         applicationId "com.kuaichuan"
         minSdkVersion 15
@@ -17,21 +16,21 @@ android {
         }
     }
 
-    signingConfigs {
-        rabtman {
-            storeFile file('D:/cornflower/juyou/keys/note.jks')
-            storePassword 'note09876'
-            keyAlias 'key0'
-            keyPassword 'note09876'
-        }
-    }
+//    signingConfigs {
+//        rabtman {
+//            storeFile file('D:/cornflower/juyou/keys/note.jks')
+//            storePassword 'note09876'
+//            keyAlias 'key0'
+//            keyPassword 'note09876'
+//        }
+//    }
 
 
     buildTypes {
 
         debug {
             minifyEnabled false
-            signingConfig signingConfigs.rabtman
+//            signingConfig signingConfigs.rabtman
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {

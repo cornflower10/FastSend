@@ -21,6 +21,9 @@
     <string name="str_jpeg_desc">图片</string>
     <string name="str_mp3_desc">音乐</string>
     <string name="str_mp4_desc">视频</string>
+    <string name="str_desc_welcome">传\n递\n的\n不\n仅\n仅\n是\n文\n件</string>
+    <string name="str_desc_share">更\n是\n一\n种\n分\n享</string>
+
     <string name="str_desc">描述</string>
     <string name="action_client">我要发送</string>
     <string name="action_server">我要接收</string>

@@ -29,17 +29,15 @@
             android:layout_height="@dimen/dp_18"
             android:background="@drawable/ic_more_vert_4dp"
             android:layout_centerVertical="true" />
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:layout_toRightOf="@+id/iv"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/iv_mini_avator"
             android:layout_width="@dimen/avator_mini_with"
             android:layout_height="@dimen/avator_mini_with"
             android:layout_marginLeft="@dimen/dp_8"
-            android:src="@mipmap/ic_launcher"
-            app:civ_border_width="1dp"
-            app:civ_border_color="#FFFFFFFF" />
-
+            android:src="@mipmap/face"
+            />
     </RelativeLayout>
 
     <LinearLayout

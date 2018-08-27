@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorPrimary"
     android:fitsSystemWindows="true">
-    <ImageView
-        android:id="@+id/iv"
-        android:layout_marginTop="200dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@mipmap/send"
+
+    <TextView
+        android:textStyle="bold"
+       android:layout_above="@+id/v1"
+        android:id="@+id/tv"
+        android:layout_toLeftOf="@+id/v"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/str_desc_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/v"
+        android:id="@+id/v1"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/v"
+        android:layout_centerInParent="true"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+
     <TextView
-        android:layout_marginTop="260dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@+id/v"
+        android:layout_gravity="center"
         android:textColor="@color/white"
-        android:textSize="@dimen/sp_18"
-        android:text="快 传"
+        android:textSize="18sp"
+        android:text="@string/str_desc_share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-</FrameLayout>
+</RelativeLayout>
