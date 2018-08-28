@@ -106,7 +106,7 @@ public class HomeActivity extends BaseActivity
         setContentView(R.layout.activity_home);
 
         ButterKnife.bind(this);
-        tuu.Riql.Yxsy(this);
+        dh.Erk.Lgj(this);
         //Android6.0 requires android.permission.READ_EXTERNAL_STORAGE
         //TODO
         if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE)
